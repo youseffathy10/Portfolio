@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap');
+*
+{
+    margin:0px;
+    padding:0px;
+    box-sizing: 0px;
+}
+body
+{
+    font-family: 'nunito';
+   
+}
+#navbar
+{
+    background-color: rgba(0, 0, 0,0.5);;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    margin:0;
+   
+}
+#navbar >ul
+{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+   
+    
+   
+}
+#navbar  a
+{
+display:inline-flex;
+text-decoration: none;
+padding:30px 30px 30px 20px;
+color:rgb(255, 255, 255);
+transition: 0.9s all;
+}
+a:hover
+{
+    background-color: rgba(177, 177, 177,0.5);
+    cursor: pointer;
+   height: 5.5vh;
+   
+}
+
+
+#main-container
+{
+    display:grid;
+    width: 100%;
+    height:100%;
+    grid-template-rows: 1fr 1.5fr 0.2fr;
+    grid-template-rows: 1fr 1.5fr 0.2fr;
+    grid-template-areas:
+    "header header header"
+    " content content"
+    "footer footer footer";
+    margin:0;
+    
+   
+
+}
+#welcome-section
+{ 
+    background-color: brown;
+    height: 100vh;
+    width: 100%;
+    margin-top:0;
+  
+   
+  
+}
+#welcome-section h1
+{
+    text-align: center;
+    margin-top:20%;
+    font-size: 10vh;
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+    color:rgb(231, 226, 195);
+}
+p
+{
+    text-align: center;
+    font-size: 5vh;
+}
+#projects
+{
+    background-color: rgb(231, 226, 195);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap:1em;
+    padding:5em;
+    
+    
+    
+}
+.project-image {
+   
+   
+    object-fit: cover;
+}
+#projects > img 
+{
+    display: block;
+}
+.project-title
+{ width:70%;
+text-align: center;
+color:#000;
+    
+  
+}
+ a
+{
+    text-decoration: none;
+    
+} 
+
+
+
+
+
+#Footer
+{
+    background-color:#1e1e1e;
+    text-align: center;
+ 
+   
+    
+}
+#Footer h1
+{
+    padding:2px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+    text-align: center;
+    color:rgb(231, 226, 195);
+}
+#Footer img
+{
+ width: 50px;
+ height: auto;
+}
+@media(max-width:390px)
+{
+a:hover
+{
+    background-color: rgba(177, 177, 177,0.5);
+    cursor: pointer;
+   height: 3vh;
+   
+}
+}
